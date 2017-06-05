@@ -1,0 +1,21 @@
+14:03:08 **** Incremental Build of configuration Debug for project Testing ****
+make all 
+Building file: ../testRegle.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP1/TP1Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"testRegle.d" -MT"testRegle.o" -o "testRegle.o" "../testRegle.cpp"
+Finished building: ../testRegle.cpp
+ 
+Building target: Testing
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "Testing"  ./testRegle.o   -lgtest -lgtest_main -lpthread -lTP1Archive
+/usr/lib/gcc/i686-linux-gnu/5/../../../../lib/libgtest_main.a(gtest_main.cc.o) : Dans la fonction « main » :
+gtest_main.cc:(.text+0x2b) : référence indéfinie vers « testing::InitGoogleTest(int*, char**) »
+/usr/lib/gcc/i686-linux-gnu/5/../../../../lib/libgtest_main.a(gtest_main.cc.o) : Dans la fonction « RUN_ALL_TESTS() » :
+gtest_main.cc:(.text._Z13RUN_ALL_TESTSv[_Z13RUN_ALL_TESTSv]+0x7) : référence indéfinie vers « testing::UnitTest::GetInstance() »
+gtest_main.cc:(.text._Z13RUN_ALL_TESTSv[_Z13RUN_ALL_TESTSv]+0x10) : référence indéfinie vers « testing::UnitTest::Run() »
+collect2: error: ld returned 1 exit status
+makefile:44 : la recette pour la cible « Testing » a échouée
+make: *** [Testing] Erreur 1
+
+14:03:09 Build Finished (took 624ms)
+

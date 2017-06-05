@@ -1,0 +1,9 @@
+#include <gtest/gtest.h>
+#include "Regle.h"
+
+using tp1;
+
+TEST(regleTestSimple, creationRegleValide){
+	Regle r();
+
+}

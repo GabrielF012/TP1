@@ -1,0 +1,11 @@
+#include <gtest/gtest.h>
+#include "Regle.h"
+
+using namespace tp1;
+
+Regle re();
+
+re.getPremisse("Banane");
+re.getConclusion("Pourrite");
+
+cout << re;

@@ -1,0 +1,11 @@
+#include <gtest/gtest.h>
+#include "Regle.h"
+
+using namespace tp1;
+
+Regle re;
+
+re.GetPremisses().push_back("a des poils");
+re.GetConclusions().push_back("est un mammifere");
+
+cout << re;

@@ -1,0 +1,58 @@
+/**
+ * \file SystemeExpert.cpp
+ * \brief Ce fichier contient une implantation des méthodes de la classe SystemeExpert
+ * \author ?
+ * \version 0.5
+ * \date juin 2017
+ *
+ */
+
+#include "SystemeExpert.h"
+
+namespace tp1
+{
+	//Mettez l'implantation de vos méthodes ici.
+	SystemeExpert::SystemeExpert(){
+
+	}
+	SystemeExpert::~SystemeExpert(){
+
+	}
+	SystemeExpert::SystemeExpert(const SystemeExpert & se){
+		baseRegles = se.baseRegles;
+		baseFaits = se.baseFaits;
+	}
+	SystemeExpert & SystemeExpert::operator = (const SystemeExpert & se){
+
+	}
+	void SystemeExpert::ajouterRegleSE(const Regle & tr){
+		if (!baseRegles.appartient(tr)){
+			baseRegles.ajouter(tr, baseRegles.taille()+1);
+		}
+	}
+
+	void SystemeExpert::ajouterFaitSE(const TypeFait & tf){
+		auto ajouter = false;
+		for (auto el : baseFaits ){
+			if(tf == el){
+				ajouter = true;
+			}
+		}
+		if (!ajouter){
+			baseFaits.push_back(tf);
+		}
+	}
+
+	void SystemeExpert::chargerSE(std::ifstream & EntreeFichier){
+
+	}
+
+	void SystemeExpert::sauvegarderSE(std::ofstream & SortieFichier) const{
+
+	}
+
+	void SystemeExpert::chainageAvant(ListeCirculaire<Regle> & er){
+
+	}
+}
+
