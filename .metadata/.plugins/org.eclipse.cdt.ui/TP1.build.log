@@ -1,6 +1,10 @@
-22:21:14 **** Incremental Build of configuration Debug for project TP1 ****
+16:20:42 **** Incremental Build of configuration Debug for project TP1 ****
 make all 
-make: rien à faire pour « all ».
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
 
-22:21:14 Build Finished (took 202ms)
+16:20:42 Build Finished (took 243ms)
 

@@ -97,21 +97,31 @@ namespace tp1{
 			string pre = "!%";
 			string fait = "!!";
 			string action = pre;
-			string prefixRegle = "re";
-			int nbr = 1;
+			int nbr = trouverNbRegle(pre, EntreeFichier);
+			cout << nbr << endl;
+			int nbRegle = 0;
+			Regle * re = new Regle[nbr];
+			re[nbRegle].GetPremisses().push_back("test prem");
+			re[nbRegle].GetConclusions().push_back("test conclusion");
+			cout << re << endl;
 			while(getline(EntreeFichier, ligne)){
 				if (ligne != pre && ligne != con && ligne != fait){
 					if (action == pre){
-						string nomRegle = nommerRegle(nbr, prefixRegle);
-						Regle * a = new Regle;
-						nbr++;
+						cout << "Prem." << ligne << endl;
+						re[nbRegle].GetPremisses().push_back(ligne);
 					}else if (action == con){
+						cout << "Con." << ligne << endl;
+						re[nbRegle].GetConclusions().push_back(ligne);
 					}else if (action == fait){
+						cout << "Fait" << ligne << endl;
 						ajouterFaitSE(ligne);
 					}
 				} else {
 					if (ligne == pre){
 						action = pre;
+						ajouterRegleSE(re[nbRegle]);
+						cout << "Première règle" << re[0] << endl;
+						nbRegle++;
 					}else if (ligne == con){
 						action = con;
 					}else if (ligne == fait){
@@ -134,6 +144,16 @@ namespace tp1{
 	string SystemeExpert::nommerRegle(int numero, string nom){
 		string num = to_string(numero);
 		return nom+num;
+	}
+	int SystemeExpert::trouverNbRegle(string code, std::ifstream & EntreeFichier){
+		string ligne;
+		int nbLigne = 1;
+		while(getline(EntreeFichier, ligne)){
+			if (ligne == code){
+				nbLigne++;
+			}
+		}
+		return nbLigne;
 	}
 }
 
