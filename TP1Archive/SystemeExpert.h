@@ -133,7 +133,7 @@ class SystemeExpert{
 
    //Ajouter ici des fonctions utilitaires si nécessaire.
 
-    int trouverNbLigne(std::ifstream & EntreeFichier);
+    std::string nommerRegle(int, std::string);
 
 };
 

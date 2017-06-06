@@ -1,14 +1,14 @@
-15:05:07 **** Incremental Build of configuration Debug for project TP1Archive ****
+22:21:15 **** Incremental Build of configuration Debug for project TP1Archive ****
 make all 
 Building file: ../SystemeExpert.cpp
 Invoking: GCC C++ Compiler
 g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::chargerSE(std::ifstream&)’:
+../SystemeExpert.cpp:106:15: warning: unused variable ‘a’ [-Wunused-variable]
+       Regle * a = new Regle;
+               ^
 ../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
-../SystemeExpert.cpp:56:2: warning: no return statement in function returning non-void [-Wreturn-type]
-  }
-  ^
-../SystemeExpert.cpp: In member function ‘int tp1::SystemeExpert::trouverNbLigne(std::ifstream&)’:
-../SystemeExpert.cpp:128:2: warning: control reaches end of non-void function [-Wreturn-type]
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
   }
   ^
 Finished building: ../SystemeExpert.cpp
@@ -20,5 +20,5 @@ ar: création de libTP1Archive.a
 Finished building target: libTP1Archive.a
  
 
-15:05:08 Build Finished (took 794ms)
+22:21:17 Build Finished (took 2s.299ms)
 

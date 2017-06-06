@@ -52,7 +52,9 @@ namespace tp1{
 	 * \exception bad_alloc si la précondition n'est pas respectée
 	 */
 	SystemeExpert & SystemeExpert::operator = (const SystemeExpert & se){
-
+		if (this == &se){
+			return *this;
+		}
 	}
 	/**
 	 *  \brief Ajouter une nouvelle regle dans le SE
@@ -76,32 +78,45 @@ namespace tp1{
 	 * \exception bad_alloc si pas assez de mémoire
 	 */
 	void SystemeExpert::ajouterFaitSE(const TypeFait & tf){
-		auto ajouter = false;
-		for (auto el : baseFaits ){
-			if(tf == el){
-				ajouter = true;
-			}
-		}
-		if (!ajouter){
-			baseFaits.push_back(tf);
-		}
+//		auto ajouter = false;
+//		for (auto el : baseFaits ){
+//			if(tf == el){
+//				ajouter = true;
+//			}
+//		}
+//		if (!ajouter){
+//			baseFaits.push_back(tf);
+//		}
+		getBaseFaits().push_back(tf);
 	}
 
 	void SystemeExpert::chargerSE(std::ifstream & EntreeFichier){
 		if(EntreeFichier){
 			string ligne;
-			string pre = "!>";
-			int nbl = 0;
-			bool test = false;
+			string con = "!>";
+			string pre = "!%";
+			string fait = "!!";
+			string action = pre;
+			string prefixRegle = "re";
+			int nbr = 1;
 			while(getline(EntreeFichier, ligne)){
-				++nbl;
-				if (test){
-					cout << "Ligne" << nbl << " : " << ligne << endl;
-					test = false;
-				}
-				if(ligne.find(pre) != string::npos){
-					cout << "ligne" << nbl << " : " << ligne << endl;
-					test = true;
+				if (ligne != pre && ligne != con && ligne != fait){
+					if (action == pre){
+						string nomRegle = nommerRegle(nbr, prefixRegle);
+						Regle * a = new Regle;
+						nbr++;
+					}else if (action == con){
+					}else if (action == fait){
+						ajouterFaitSE(ligne);
+					}
+				} else {
+					if (ligne == pre){
+						action = pre;
+					}else if (ligne == con){
+						action = con;
+					}else if (ligne == fait){
+						action == fait;
+					}
 				}
 			}
 		}
@@ -116,15 +131,9 @@ namespace tp1{
 
 	}
 
-	int SystemeExpert::trouverNbLigne(std::ifstream & EntreeFichier){
-		if(EntreeFichier){
-			std::string ligne;
-			auto nbl = 0;
-			while (std::getline(EntreeFichier, ligne)){
-				nbl++;
-			}
-			return nbl;
-		}
+	string SystemeExpert::nommerRegle(int numero, string nom){
+		string num = to_string(numero);
+		return nom+num;
 	}
 }
 
