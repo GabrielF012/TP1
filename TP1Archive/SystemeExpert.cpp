@@ -8,6 +8,7 @@
  */
 
 #include "SystemeExpert.h"
+#include "ListeCirculaire.h"
 #include <sstream>
 #include <fstream>
 #include <iostream>
@@ -65,8 +66,8 @@ namespace tp1{
 	 * \exception bad_alloc si pas assez de mémoire
 	 */
 	void SystemeExpert::ajouterRegleSE(const Regle & tr){
-		if (!baseRegles.appartient(tr)){
-			baseRegles.ajouter(tr, baseRegles.taille()+1);
+		if (!getBaseRegles().appartient(tr)){
+			getBaseRegles().ajouter(tr, getBaseRegles().taille()+1);
 		}
 	}
 	/**
@@ -78,54 +79,45 @@ namespace tp1{
 	 * \exception bad_alloc si pas assez de mémoire
 	 */
 	void SystemeExpert::ajouterFaitSE(const TypeFait & tf){
-//		auto ajouter = false;
-//		for (auto el : baseFaits ){
-//			if(tf == el){
-//				ajouter = true;
-//			}
-//		}
-//		if (!ajouter){
-//			baseFaits.push_back(tf);
-//		}
-		getBaseFaits().push_back(tf);
+		auto ajouter = false;
+		for (auto el : baseFaits ){
+			if(tf == el){
+				ajouter = true;
+			}
+		}
+		if (!ajouter){
+			getBaseFaits().push_back(tf);
+		}
 	}
 
 	void SystemeExpert::chargerSE(std::ifstream & EntreeFichier){
 		if(EntreeFichier){
-			string ligne;
+			string ligne = "";
 			string con = "!>";
 			string pre = "!%";
 			string fait = "!!";
 			string action = pre;
 			int nbr = trouverNbRegle(pre, EntreeFichier);
-			cout << nbr << endl;
 			int nbRegle = 0;
 			Regle * re = new Regle[nbr];
-			re[nbRegle].GetPremisses().push_back("test prem");
-			re[nbRegle].GetConclusions().push_back("test conclusion");
-			cout << re << endl;
 			while(getline(EntreeFichier, ligne)){
 				if (ligne != pre && ligne != con && ligne != fait){
 					if (action == pre){
-						cout << "Prem." << ligne << endl;
 						re[nbRegle].GetPremisses().push_back(ligne);
 					}else if (action == con){
-						cout << "Con." << ligne << endl;
 						re[nbRegle].GetConclusions().push_back(ligne);
 					}else if (action == fait){
-						cout << "Fait" << ligne << endl;
 						ajouterFaitSE(ligne);
 					}
 				} else {
 					if (ligne == pre){
 						action = pre;
 						ajouterRegleSE(re[nbRegle]);
-						cout << "Première règle" << re[0] << endl;
 						nbRegle++;
 					}else if (ligne == con){
 						action = con;
 					}else if (ligne == fait){
-						action == fait;
+						action = fait;
 					}
 				}
 			}
@@ -134,25 +126,29 @@ namespace tp1{
 	}
 
 	void SystemeExpert::sauvegarderSE(std::ofstream & SortieFichier) const{
-
+//		for (auto i = 0; i < getBaseRegles().taille(); i++){
+//
+//		}
+		SortieFichier << "!!";
+		for(auto el : baseFaits){
+			SortieFichier << el;
+		}
 	}
 
 	void SystemeExpert::chainageAvant(ListeCirculaire<Regle> & er){
 
 	}
 
-	string SystemeExpert::nommerRegle(int numero, string nom){
-		string num = to_string(numero);
-		return nom+num;
-	}
 	int SystemeExpert::trouverNbRegle(string code, std::ifstream & EntreeFichier){
-		string ligne;
+		string lignes = "";
 		int nbLigne = 1;
-		while(getline(EntreeFichier, ligne)){
-			if (ligne == code){
+		while(getline(EntreeFichier, lignes)){
+			if (lignes == code){
 				nbLigne++;
 			}
 		}
+		EntreeFichier.clear();
+		EntreeFichier.seekg(0, ios::beg);
 		return nbLigne;
 	}
 }

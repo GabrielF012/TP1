@@ -10003,3 +10003,1506 @@ Invoking: GCC C++ Linker
 g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
 Finished building target: TP1
  
+17:27:38 **** Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP1/TP1Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:27:42 **** Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../Regle.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Regle.d" -MT"Regle.o" -o "Regle.o" "../Regle.cpp"
+../Regle.cpp: In member function ‘tp1::Regle& tp1::Regle::operator=(const tp1::Regle&)’:
+../Regle.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../Regle.cpp
+ 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::chargerSE(std::ifstream&)’:
+../SystemeExpert.cpp:103:27: error: ‘nbr’ was not declared in this scope
+    Regle * re = new Regle[nbr];
+                           ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+17:27:54 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:27:54 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::chargerSE(std::ifstream&)’:
+../SystemeExpert.cpp:103:27: error: expected primary-expression before ‘]’ token
+    Regle * re = new Regle[];
+                           ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+17:28:19 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:28:20 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+17:28:28 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:30:55 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:30:56 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+17:31:02 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:31:56 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:31:57 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+17:32:03 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:33:44 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:33:44 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+17:33:51 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:34:35 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:34:35 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+17:34:40 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:35:24 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:35:25 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+17:35:31 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:35:54 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:35:54 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+17:36:00 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:36:30 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:36:30 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+17:36:36 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+17:50:38 **** Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+17:50:39 **** Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+Finished building target: libTP1Archive.a
+ 
+17:50:48 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+18:03:59 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+18:04:00 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+18:04:11 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+18:04:50 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+18:04:50 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+18:04:56 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+18:13:50 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+18:18:20 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+18:18:21 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+18:18:27 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:15:35 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:15:35 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+20:15:43 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:23:38 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:28:25 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:28:26 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+20:28:38 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:30:01 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:30:01 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+20:30:09 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:32:24 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:32:24 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::chargerSE(std::ifstream&)’:
+../SystemeExpert.cpp:102:8: warning: unused variable ‘nbRegle’ [-Wunused-variable]
+    int nbRegle = 0;
+        ^
+../SystemeExpert.cpp:103:12: warning: unused variable ‘re’ [-Wunused-variable]
+    Regle * re = new Regle[nbr];
+            ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+20:32:36 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:34:10 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:34:10 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+20:34:51 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:34:52 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+20:35:03 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:41:15 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP1/TP1Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:43:07 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:43:07 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:133:2: error: expected ‘;’ before ‘}’ token
+  }
+  ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+20:43:15 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:43:16 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+20:43:21 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+20:48:49 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:48:50 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:18: error: invalid initialization of reference of type ‘tp1::ListeCirculaire<tp1::Regle>& (tp1::SystemeExpert::*&&)()’ from expression of type ‘<unresolved overloaded function type>’
+   for (auto el : getBaseRegles){
+                  ^
+../SystemeExpert.cpp:132:18: error: ‘begin’ was not declared in this scope
+../SystemeExpert.cpp:132:18: note: suggested alternatives:
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:87:5: note:   ‘std::begin’
+     begin(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:87:5: note:   ‘std::begin’
+../SystemeExpert.cpp:132:18: error: ‘end’ was not declared in this scope
+   for (auto el : getBaseRegles){
+                  ^
+../SystemeExpert.cpp:132:18: note: suggested alternatives:
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:97:5: note:   ‘std::end’
+     end(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:97:5: note:   ‘std::end’
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [SystemeExpert.o] Erreur 1
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+20:50:17 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:50:17 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:28: error: ‘const class tp1::ListeCirculaire<tp1::Regle>’ has no member named ‘begin’
+   for(auto it = baseRegles.begin(); it != baseFaits.end(); it++){
+                            ^
+../SystemeExpert.cpp:133:21: error: ‘el’ was not declared in this scope
+    SortieFichier << el;
+                     ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+20:50:31 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+20:50:32 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:28: error: ‘const class tp1::ListeCirculaire<tp1::Regle>’ has no member named ‘begin’
+   for(auto it = baseRegles.begin(); it != baseFaits.end(); it++){
+                            ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [SystemeExpert.o] Erreur 1
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+21:01:33 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:01:33 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:28: error: ‘const class tp1::ListeCirculaire<tp1::Regle>’ has no member named ‘begin’
+   for(auto it = baseRegles.begin(); it != baseFaits.end(); it++){
+                            ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [SystemeExpert.o] Erreur 1
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+21:01:49 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:01:49 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:17: error: ‘((const tp1::SystemeExpert*)this)->tp1::SystemeExpert::getBaseRegles’ does not have class type
+   for(auto it = getBaseRegles.begin(); it != getBaseFaits.end(); it++){
+                 ^
+../SystemeExpert.cpp:132:46: error: ‘((const tp1::SystemeExpert*)this)->tp1::SystemeExpert::getBaseFaits’ does not have class type
+   for(auto it = getBaseRegles.begin(); it != getBaseFaits.end(); it++){
+                                              ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:02:20 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:02:21 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:17: error: ‘begin’ was not declared in this scope
+   for(auto el : baseRegles){
+                 ^
+../SystemeExpert.cpp:132:17: note: suggested alternatives:
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:87:5: note:   ‘std::begin’
+     begin(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:87:5: note:   ‘std::begin’
+../SystemeExpert.cpp:132:17: error: ‘end’ was not declared in this scope
+   for(auto el : baseRegles){
+                 ^
+../SystemeExpert.cpp:132:17: note: suggested alternatives:
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:97:5: note:   ‘std::end’
+     end(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:97:5: note:   ‘std::end’
+../SystemeExpert.cpp:133:21: error: ‘it’ was not declared in this scope
+    SortieFichier << it;
+                     ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:02:29 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:02:29 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:17: error: ‘begin’ was not declared in this scope
+   for(auto el : baseRegles){
+                 ^
+../SystemeExpert.cpp:132:17: note: suggested alternatives:
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:87:5: note:   ‘std::begin’
+     begin(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:87:5: note:   ‘std::begin’
+../SystemeExpert.cpp:132:17: error: ‘end’ was not declared in this scope
+   for(auto el : baseRegles){
+                 ^
+../SystemeExpert.cpp:132:17: note: suggested alternatives:
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:97:5: note:   ‘std::end’
+     end(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:97:5: note:   ‘std::end’
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:02:48 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:02:49 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:17: error: invalid initialization of reference of type ‘tp1::ListeCirculaire<tp1::Regle>& (tp1::SystemeExpert::*&&)()’ from expression of type ‘<unresolved overloaded function type>’
+   for(auto el : getBaseRegles){
+                 ^
+../SystemeExpert.cpp:132:17: error: ‘begin’ was not declared in this scope
+../SystemeExpert.cpp:132:17: note: suggested alternatives:
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:87:5: note:   ‘std::begin’
+     begin(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:87:5: note:   ‘std::begin’
+../SystemeExpert.cpp:132:17: error: ‘end’ was not declared in this scope
+   for(auto el : getBaseRegles){
+                 ^
+../SystemeExpert.cpp:132:17: note: suggested alternatives:
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:97:5: note:   ‘std::end’
+     end(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:97:5: note:   ‘std::end’
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:03:09 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:03:10 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:132:17: error: invalid initialization of reference of type ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*&&)()’ from expression of type ‘<unresolved overloaded function type>’
+   for(auto el : getBaseFaits){
+                 ^
+../SystemeExpert.cpp:132:17: error: no matching function for call to ‘begin(std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*&)())’
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:87:5: note: candidate: template<class _Tp, unsigned int _Nm> _Tp* std::begin(_Tp (&)[_Nm])
+     begin(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:87:5: note:   template argument deduction/substitution failed:
+../SystemeExpert.cpp:132:17: note:   mismatched types ‘_Tp [_Nm]’ and ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()’
+   for(auto el : getBaseFaits){
+                 ^
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:58:5: note: candidate: template<class _Container> decltype (__cont.begin()) std::begin(const _Container&)
+     begin(const _Container& __cont) -> decltype(__cont.begin())
+     ^
+/usr/include/c++/5/bits/range_access.h:58:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/5/bits/range_access.h: In substitution of ‘template<class _Container> decltype (__cont.begin()) std::begin(const _Container&) [with _Container = std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()]’:
+../SystemeExpert.cpp:132:17:   required from here
+/usr/include/c++/5/bits/range_access.h:58:5: error: request for member ‘begin’ in ‘__cont’, which is of non-class type ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::* const)()’
+/usr/include/c++/5/bits/range_access.h:48:5: note: candidate: template<class _Container> decltype (__cont.begin()) std::begin(_Container&)
+     begin(_Container& __cont) -> decltype(__cont.begin())
+     ^
+/usr/include/c++/5/bits/range_access.h:48:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/5/bits/range_access.h: In substitution of ‘template<class _Container> decltype (__cont.begin()) std::begin(_Container&) [with _Container = std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()]’:
+../SystemeExpert.cpp:132:17:   required from here
+/usr/include/c++/5/bits/range_access.h:48:5: error: request for member ‘begin’ in ‘__cont’, which is of non-class type ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()’
+In file included from /usr/include/c++/5/bits/range_access.h:36:0,
+                 from /usr/include/c++/5/string:51,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/initializer_list:89:5: note: candidate: template<class _Tp> constexpr const _Tp* std::begin(std::initializer_list<_Tp>)
+     begin(initializer_list<_Tp> __ils) noexcept
+     ^
+/usr/include/c++/5/initializer_list:89:5: note:   template argument deduction/substitution failed:
+../SystemeExpert.cpp:132:17: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()’
+   for(auto el : getBaseFaits){
+                 ^
+../SystemeExpert.cpp:132:17: error: no matching function for call to ‘end(std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*&)())’
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:97:5: note: candidate: template<class _Tp, unsigned int _Nm> _Tp* std::end(_Tp (&)[_Nm])
+     end(_Tp (&__arr)[_Nm])
+     ^
+/usr/include/c++/5/bits/range_access.h:97:5: note:   template argument deduction/substitution failed:
+../SystemeExpert.cpp:132:17: note:   mismatched types ‘_Tp [_Nm]’ and ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()’
+   for(auto el : getBaseFaits){
+                 ^
+In file included from /usr/include/c++/5/string:51:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/bits/range_access.h:78:5: note: candidate: template<class _Container> decltype (__cont.end()) std::end(const _Container&)
+     end(const _Container& __cont) -> decltype(__cont.end())
+     ^
+/usr/include/c++/5/bits/range_access.h:78:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/5/bits/range_access.h: In substitution of ‘template<class _Container> decltype (__cont.end()) std::end(const _Container&) [with _Container = std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()]’:
+../SystemeExpert.cpp:132:17:   required from here
+/usr/include/c++/5/bits/range_access.h:78:5: error: request for member ‘end’ in ‘__cont’, which is of non-class type ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::* const)()’
+/usr/include/c++/5/bits/range_access.h:68:5: note: candidate: template<class _Container> decltype (__cont.end()) std::end(_Container&)
+     end(_Container& __cont) -> decltype(__cont.end())
+     ^
+/usr/include/c++/5/bits/range_access.h:68:5: note:   template argument deduction/substitution failed:
+/usr/include/c++/5/bits/range_access.h: In substitution of ‘template<class _Container> decltype (__cont.end()) std::end(_Container&) [with _Container = std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()]’:
+../SystemeExpert.cpp:132:17:   required from here
+/usr/include/c++/5/bits/range_access.h:68:5: error: request for member ‘end’ in ‘__cont’, which is of non-class type ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()’
+In file included from /usr/include/c++/5/bits/range_access.h:36:0,
+                 from /usr/include/c++/5/string:51,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from ../SystemeExpert.h:23,
+                 from ../SystemeExpert.cpp:10:
+/usr/include/c++/5/initializer_list:99:5: note: candidate: template<class _Tp> constexpr const _Tp* std::end(std::initializer_list<_Tp>)
+     end(initializer_list<_Tp> __ils) noexcept
+     ^
+/usr/include/c++/5/initializer_list:99:5: note:   template argument deduction/substitution failed:
+../SystemeExpert.cpp:132:17: note:   mismatched types ‘std::initializer_list<_Tp>’ and ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& (tp1::SystemeExpert::*)()’
+   for(auto el : getBaseFaits){
+                 ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:03:38 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:03:38 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+21:03:53 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+21:04:56 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:04:56 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+21:05:10 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+21:05:11 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::ajouterFaitSE(const TypeFait&)’:
+../SystemeExpert.cpp:88:4: error: ‘((tp1::SystemeExpert*)this)->tp1::SystemeExpert::getBaseFaits’ does not have class type
+    getBaseFaits.push_back(tf);
+    ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:05:27 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:05:27 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+21:05:34 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+21:06:10 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:10:41 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:14:37 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:14:37 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+21:15:21 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+21:15:21 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:30: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for(auto el : getBaseFaits()){
+                              ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:127:24: note:   in call to ‘std::__cxx11::list<std::__cxx11::basic_string<char> >& tp1::SystemeExpert::getBaseFaits()’
+  std::list<TypeFait> & getBaseFaits () {return baseFaits;}
+                        ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [SystemeExpert.o] Erreur 1
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+21:15:37 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:15:37 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+21:16:21 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+21:16:22 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
+21:23:16 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../Principal.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -I"/home/etudiant/Bureau/TP1/TP1Archive" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Principal.d" -MT"Principal.o" -o "Principal.o" "../Principal.cpp"
+Finished building: ../Principal.cpp
+ 
+Building target: TP1
+Invoking: GCC C++ Linker
+g++ -L"/home/etudiant/Bureau/TP1/TP1Archive/Debug" -o "TP1"  ./Principal.o   -lTP1Archive
+Finished building target: TP1
+ 
+21:23:19 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:37: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for (auto i = 0; i< getBaseRegles().taille(); i++){
+                                     ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:126:27: note:   in call to ‘tp1::ListeCirculaire<tp1::Regle>& tp1::SystemeExpert::getBaseRegles()’
+  ListeCirculaire<Regle> & getBaseRegles () {return baseRegles;}
+                           ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:24:16 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:24:16 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:34: error: no match for call to ‘(const tp1::ListeCirculaire<tp1::Regle>) ()’
+   for (auto i = 0; i< baseRegles().taille(); i++){
+                                  ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:25:58 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:25:58 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:38: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for (auto i = 0; i < getBaseRegles().taille(); i++){
+                                      ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:126:27: note:   in call to ‘tp1::ListeCirculaire<tp1::Regle>& tp1::SystemeExpert::getBaseRegles()’
+  ListeCirculaire<Regle> & getBaseRegles () {return baseRegles;}
+                           ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:31:48 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:31:49 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:29: error: request for member ‘taille’ in ‘(const tp1::SystemeExpert*)this’, which is of pointer type ‘const tp1::SystemeExpert*’ (maybe you meant to use ‘->’ ?)
+   for (auto i = 0; i < this.taille(); i++){
+                             ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:32:07 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:32:08 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:30: error: ‘const class tp1::SystemeExpert’ has no member named ‘taille’
+   for (auto i = 0; i < this->taille(); i++){
+                              ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:35:01 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:35:01 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:37: error: invalid use of member function (did you forget the ‘()’ ?)
+   for (auto i = 0; i < getBaseRegles->taille(); i++){
+                                     ^
+../SystemeExpert.cpp:128:37: error: base operand of ‘->’ is not a pointer
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:35:19 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:35:20 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:38: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for (auto i = 0; i < getBaseRegles()->taille(); i++){
+                                      ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:126:27: note:   in call to ‘tp1::ListeCirculaire<tp1::Regle>& tp1::SystemeExpert::getBaseRegles()’
+  ListeCirculaire<Regle> & getBaseRegles () {return baseRegles;}
+                           ^
+../SystemeExpert.cpp:128:39: error: base operand of ‘->’ has non-pointer type ‘tp1::ListeCirculaire<tp1::Regle>’
+   for (auto i = 0; i < getBaseRegles()->taille(); i++){
+                                       ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+make: *** [SystemeExpert.o] Erreur 1
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+21:36:16 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:36:16 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:128:38: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for (auto i = 0; i < getBaseRegles().taille(); i++){
+                                      ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:126:27: note:   in call to ‘tp1::ListeCirculaire<tp1::Regle>& tp1::SystemeExpert::getBaseRegles()’
+  ListeCirculaire<Regle> & getBaseRegles () {return baseRegles;}
+                           ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:58:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:36:55 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:36:55 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:129:38: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for (auto i = 0; i < getBaseRegles().taille(); i++){
+                                      ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:126:27: note:   in call to ‘tp1::ListeCirculaire<tp1::Regle>& tp1::SystemeExpert::getBaseRegles()’
+  ListeCirculaire<Regle> & getBaseRegles () {return baseRegles;}
+                           ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:59:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:37:51 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:37:51 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:129:38: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for (auto i = 0; i < getBaseRegles().tp1::taille(); i++){
+                                      ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:126:27: note:   in call to ‘tp1::ListeCirculaire<tp1::Regle>& tp1::SystemeExpert::getBaseRegles()’
+  ListeCirculaire<Regle> & getBaseRegles () {return baseRegles;}
+                           ^
+../SystemeExpert.cpp:129:40: error: ‘tp1::taille’ is not a class member
+   for (auto i = 0; i < getBaseRegles().tp1::taille(); i++){
+                                        ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:59:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:38:13 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:38:14 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:129:24: error: ‘getBaseRegles’ is not a member of ‘tp1’
+   for (auto i = 0; i < tp1::getBaseRegles().taille(); i++){
+                        ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:59:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:38:33 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:38:33 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:129:38: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for (auto i = 0; i < getBaseRegles().taille(); i++){
+                                      ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:126:27: note:   in call to ‘tp1::ListeCirculaire<tp1::Regle>& tp1::SystemeExpert::getBaseRegles()’
+  ListeCirculaire<Regle> & getBaseRegles () {return baseRegles;}
+                           ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:59:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:41:13 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:41:13 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘void tp1::SystemeExpert::sauvegarderSE(std::ofstream&) const’:
+../SystemeExpert.cpp:129:25: error: no match for call to ‘(const tp1::ListeCirculaire<tp1::Regle>) ()’
+   int test = baseRegles().taille();
+                         ^
+../SystemeExpert.cpp:130:38: error: passing ‘const tp1::SystemeExpert’ as ‘this’ argument discards qualifiers [-fpermissive]
+   for (auto i = 0; i < getBaseRegles().taille(); i++){
+                                      ^
+In file included from ../SystemeExpert.cpp:10:0:
+../SystemeExpert.h:126:27: note:   in call to ‘tp1::ListeCirculaire<tp1::Regle>& tp1::SystemeExpert::getBaseRegles()’
+  ListeCirculaire<Regle> & getBaseRegles () {return baseRegles;}
+                           ^
+../SystemeExpert.cpp:129:7: warning: unused variable ‘test’ [-Wunused-variable]
+   int test = baseRegles().taille();
+       ^
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:59:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+subdir.mk:21 : la recette pour la cible « SystemeExpert.o » a échouée
+make: *** [SystemeExpert.o] Erreur 1
+21:42:20 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: rien à faire pour « all ».
+21:42:20 **** Incremental Build of configuration Debug for project TP1Archive ****
+make all 
+Building file: ../SystemeExpert.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++0x -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SystemeExpert.d" -MT"SystemeExpert.o" -o "SystemeExpert.o" "../SystemeExpert.cpp"
+../SystemeExpert.cpp: In member function ‘tp1::SystemeExpert& tp1::SystemeExpert::operator=(const tp1::SystemeExpert&)’:
+../SystemeExpert.cpp:59:2: warning: control reaches end of non-void function [-Wreturn-type]
+  }
+  ^
+Finished building: ../SystemeExpert.cpp
+ 
+Building target: libTP1Archive.a
+Invoking: GCC Archiver
+ar -r  "libTP1Archive.a"  ./Regle.o ./SystemeExpert.o   
+ar: création de libTP1Archive.a
+Finished building target: libTP1Archive.a
+ 
